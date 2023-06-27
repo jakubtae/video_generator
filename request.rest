@@ -1,0 +1,77 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "uname": "jakub",
+    "password": "Kopyto123"
+}
+
+###
+
+GET http://localhost:3000/user/6465fe724b087ad1e5ac61d8
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODc4OTMzNDcsImV4cCI6MTY4NzkwMjM0N30.WzSabYPaHAMm54tB1Lc_0kNTNyNWw2J-5BDaWxHxdD4"
+}
+
+
+###
+GET http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODc4OTMzNDcsImV4cCI6MTY4NzkwMjM0N30.WzSabYPaHAMm54tB1Lc_0kNTNyNWw2J-5BDaWxHxdD4"
+}
+
+###
+
+POST http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel/new
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODc4OTMzNDcsImV4cCI6MTY4NzkwMjM0N30.WzSabYPaHAMm54tB1Lc_0kNTNyNWw2J-5BDaWxHxdD4",
+    "title" : "The Jaguar's Guardian"
+}
+
+###
+
+POST http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel//update
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODc4OTMzNDcsImV4cCI6MTY4NzkwMjM0N30.WzSabYPaHAMm54tB1Lc_0kNTNyNWw2J-5BDaWxHxdD4",
+    "title" : "The Jaguar's Guardian"
+}
+
+###
+GET http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel/646608109f4dcf370d4f7c3d
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODYyOTc5MjYsImV4cCI6MTY4NjMwNjkyNn0.s-DjK3AghQuemczBakTFzFPndXDulBZUs-pjMzPAjDU"
+}
+
+###
+POST http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel/6484bdfa76797deaadf528a2/gpt
+Content-Type: application/json
+
+{
+    "prompt" : "a man named Ashton Hopkins who lost everything but fought his way to earn it back: A decorated war veteran returns home to find his world shattered. Amidst the ruins of his former life, he battles his inner demons, grappling with trauma and loss. With unwavering determination, he begins the arduous journey of rebuilding not only his physical surroundings but also the shattered fragments of his own soul. Through relentless self-discovery, he rekindles his fighting spirit, proving that resilience and the will to survive can turn ashes into triumph.",
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODY0MjA2NDYsImV4cCI6MTY4NjQyOTY0Nn0.vjQrair4PXazqqNtOlYBvXLg-MYIJIKUWOZt_bF7q-8"
+}
+###
+POST http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel/6494860c4eaa1528e98193c6/transcribe
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODc2ODU4MTksImV4cCI6MTY4NzY5NDgxOX0.lt70Vt9i9Q1t2mFBgKbiDBfSrQdtEkyMNbDybH6D6CU"
+}
+
+###
+GET http://localhost:3000/user/6465fe724b087ad1e5ac61d8/storyChannel/6494860c4eaa1528e98193c6/subs
+Content-Type: application/json
+
+{
+    "jwt" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY1ZmU3MjRiMDg3YWQxZTVhYzYxZDgiLCJ1bmFtZSI6Impha3ViIiwicGFzc3dvcmQiOiIkMmEkMTIkRnBXQkFyZS9rWTNzendXeTU1MkNZLjEvYkJVM0pVNHRiQ1JYVjhjNlRsVHNyN25sc3JZRkMiLCJwZXJtcyI6WyJzdG9yeUNoYW5uZWwiXSwiX192IjowLCJpYXQiOjE2ODc2ODU4MTksImV4cCI6MTY4NzY5NDgxOX0.lt70Vt9i9Q1t2mFBgKbiDBfSrQdtEkyMNbDybH6D6CU"
+}
